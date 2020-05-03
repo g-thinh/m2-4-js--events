@@ -21,4 +21,41 @@ main {
   width: 800px;
   margin: 20px;
   border: 5px solid goldenrod;
+  font-size: 2rem;
+  flex: 1;
+}
+
+.section > h1, span {
+  margin: 0;
+}
+
+#s1 {
+  font-size: 4rem;
+}
+
+#s2 {
+  font-size: 4rem;
+}
+
+
+.section1 {
+  flex-direction: column;
+  flex: 1;
+}
+
+.section ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section ul > li {
+  margin: 30px;
+}
+
+.section ul li > button {
+  font-size: 2rem;
+  border-radius: 10px;
 }
