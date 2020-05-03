@@ -12,14 +12,27 @@
       </div>
       <div class="section section1">
         <h1>Stop Watch</h1>
-        <span id="s2">HH:MM:SS</span>
-        <ul>
+        <span id="s2">00:00:00</span>
+        <ul class="buttons">
           <li><button id="start">Start</button></li>
           <li><button id="stop">Stop</button></li>
         </ul>
       </div>
-      <div class="section" id="s3">
-        Section 3
+      <div class="section section3">
+        <h1>Timer</h1>
+        <p>Enter your desired time to countdown.</p>
+        <ul class="timer">
+          <li id="hours" contenteditable="true">00</li>
+          <li>:</li>
+          <li id="minutes" contenteditable="true">00</li>
+          <li>:</li>
+          <li id="seconds" contenteditable="true">00</li>
+        </ul>
+        <!-- <span id="s3" contenteditable="true">HH:MM:SS</span> -->
+        <ul class="buttons">
+          <li><button id="startTimer">Start</button></li>
+          <li><button id="stopTimer">Stop</button></li>
+        </ul>
       </div>
     </main>
     <script src="app.js"></script>
