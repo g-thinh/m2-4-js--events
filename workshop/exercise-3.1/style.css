@@ -1,0 +1,21 @@
+body {
+  min-height: 100vh;
+  font-family: "Poppins";
+  background-color: pink;
+  margin:0;
+  padding: 5%;
+  border: 10px solid red;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 25%) ;
+  grid-template-rows: repeat(5,20%);
+  row-gap: 5px;
+  column-gap: 5px;
+  border: 1px dashed red;
+}
