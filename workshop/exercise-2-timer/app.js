@@ -65,7 +65,10 @@ function start() {
       `${addZero(seconds)}`;
 
   },1000)
-  
+
+  //Remove the button functionality, so you wont mistakenly run multiple 
+  //iterations of the function simultaneously.
+  document.getElementById("start").removeEventListener('click', start);
 }
 
 function stop() {
@@ -85,10 +88,12 @@ function stop() {
     `${addZero(minutes)}` + ":" +
     `${addZero(seconds)}`;
 
+  //Add back the start button functionality.
+  document.getElementById("start").addEventListener('click', start);
 }
 
 
-//add event listener to the start button
+//add event listener to the start and stop button
 document.getElementById("start").addEventListener('click', start);
 document.getElementById("stop").addEventListener('click', stop);
 
