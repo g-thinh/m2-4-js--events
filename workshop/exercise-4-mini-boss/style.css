@@ -1,0 +1,75 @@
+body {
+  min-height: 100vh;
+  font-family: "Poppins";
+  background-color: whitesmoke;
+  margin:0;
+  padding: 40px;
+  /* border: 10px solid red; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 200px) ;
+  grid-template-rows: repeat(5,200px);
+  row-gap: 15px;
+  column-gap: 15px;
+  /* border: 1px dashed red; */
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top:0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: red;
+  outline: none;
+  box-shadow: 0 0 2px rgb(0,0,0,0.2);
+  font-size: 2rem;
+}
+
+#start {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: goldenrod;
+  outline: none;
+  box-shadow: 0 0 2px rgb(0,0,0,0.2);
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.btn > button:hover {
+  background-color: #3a363a;
+}
+
+.green {
+  background-color: green;
+}
+
+/* ############################### TIMER #################################### */
+
+ul {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  font-size: 3rem;
+  list-style-type: none;
+}
